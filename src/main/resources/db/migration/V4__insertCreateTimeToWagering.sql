@@ -1,0 +1,1 @@
+ALTER TABLE wagering ADD COLUMN create_time bigint;

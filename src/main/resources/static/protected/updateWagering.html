@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HOMELOGIN</title>
+    <link rel="stylesheet" href="../css/modalWindow.css">
+    <link rel="stylesheet" href="../css/wageringFullInfo.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+<div id="page-wrap">
+    <header>
+        <a href="../index.html" title="На главную" id="logo">Wagering</a>
+        <span class="right">
+<span class="contact">
+<a href="../ui/userRegistrationForm.html" title="Зарегистрироваться">Регистрация</a>
+</span>
+<span class="contact">
+<a href="../login.html" title="Войти">Вход</a>
+</span>
+</span>
+    </header>
+    <!-- Наше модальное всплывающее окно -->
+    <div style="text-align: center" id="popupWin" class="modalwin">
+        <h2> ПРИЧИНА СМЕНЫ СТАТУСА </h2>
+        <form>
+            <input id="textReason" value="Причина: ">
+            <input id="submitReason" type="button" value="OK">
+        </form>
+        <hr>
+        <h2> Введите причину смены статуса пари.</h2>
+        <!--<br> <p> УРа!!!!!!!!!! </p>-->
+        <hr>
+    </div>
+    <form id="updateWageringForm">
+        <div>
+            <label for="name">Название пари:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="description">Описание:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <div>
+            <label for="idOfTypeOfWagering">Выбор типа пари:</label>
+            <select id="idOfTypeOfWagering" name="idOfTypeOfWagering" readonly>
+                <option value="str0"> Строка списка 0</option>
+            </select>
+        </div>
+
+        <div>
+            <!--<label for="status">Выбор статуса пари:</label>-->
+            <!--<select id="status" name="status">-->
+            <!--<option value="str0"> Строка списка 0 </option>-->
+            <!--</select>-->
+            <label for="status">Текущий татус пари:</label>
+            <input class="accessField" id="status" name="status" readonly></input>
+        </div>
+
+        <div>
+            <label for="prizeDescription">Описание награды:</label>
+            <textarea id="prizeDescription" name="prizeDescription"></textarea>
+        </div>
+
+        <div>
+            <label for="wageringDataType">Выбор формата для ответа:</label>
+            <select id="wageringDataType" name="wageringDataType">
+                <option value="str0"> Строка списка 0</option>
+            </select>
+        </div>
+
+        <div class="buttonSave" style="text-align: center">
+            <button id="saveButton" type="submit" style="text-align: center">Сохранить</button>
+        </div>
+        <style>
+            .buttonSave {
+                width: 100%;
+                text-align: center;
+            }
+        </style>
+
+        <!--<div class="button">-->
+        <!--<button id = "changeStatus">Сменить статус</button>-->
+        <!--</div>-->
+    </form>
+    <div class="lineBlock">
+
+        <div class="innerBlockButton">
+            <button id="makeCanceled" class="msgBtn2">Отменить пари</button>
+        </div>
+        <div class="innerBlockButton">
+            <button id="makeOpen" class="changeStatus" name="changeStatus" >Открыть ставки</button>
+        </div>
+        <div class="innerBlockButton">
+            <button id="makeDone" class="changeStatus" name="changeStatus">Завершить ставки</button>
+        </div>
+        <div class="innerBlockButton">
+            <button id="makeFinished" class="changeStatus" >Завершить пари</button>
+        </div>
+        <div class="innerBlockButton">
+            <button id="buttonCancel" >Отмена</button>
+        </div>
+    </div>
+    <style>
+        .lineBlock {
+            width: 100%;
+            text-align: center;
+        }
+
+        .innerBlockButton {
+            display: inline-block;
+        }
+    </style>
+</div>
+<!--<a href="allWagering.html">Список ставок<br></a>-->
+<script src="../js/updateWagering.js"></script>
+<footer>
+<span class="left">Все права защищены &copy; 2018
+</span>
+</footer>
+
+</body>
+</html>

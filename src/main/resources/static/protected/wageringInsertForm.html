@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Create Wagering</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/bigTextarea.css">
+</head>
+<body>
+<div id="page-wrap">
+    <header>
+        <a href="../index.html" title="На главную" id="logo">Wagering</a>
+        <span class="right">
+<span class="contact">
+<a href="../ui/userRegistrationForm.html" title="Зарегистрироваться">Регистрация</a>
+</span>
+<span class="contact">
+<a href="../login.html" title="Войти">Вход</a>
+</span>
+</span>
+    </header>
+    <form id="wageringForm">
+        <div>
+            <label for="name">Название пари:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="description">Описание:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <div>
+            <label for="selectForTypeOfWagering">Выбор типа пари:</label>
+            <select id="selectForTypeOfWagering" name="idOfTypeOfWagering">
+                <option value="str0"> Строка списка 0</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="selectForStatus">Выбор статуса пари:</label>
+            <select id="selectForStatus" name="status">
+                <option value="str0"> Строка списка 0</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="prizeDescription">Описание награды:</label>
+            <textarea id="prizeDescription" name="prizeDescription"></textarea>
+        </div>
+
+        <div>
+            <label for="selectForWageringDataType">Выбор формата для ответа:</label>
+            <select id="selectForWageringDataType" name="wageringDataType">
+                <option value="str0"> Строка списка 0</option>
+            </select>
+        </div>
+
+        <div class="button">
+            <button type="submit">Сохранить</button>
+        </div>
+    </form>
+</div>
+<footer>
+<span class="left" >Все права защищены &copy; 2018
+</span>
+</footer>
+<script src="../js/wageringJS.js"></script>
+</body>
+</html>

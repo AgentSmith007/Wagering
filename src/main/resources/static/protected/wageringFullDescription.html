@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Full description</title>
+    <link rel="stylesheet" href="../css/wageringFullInfo.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+</head>
+<body>
+<form id="wageringInfoForm">
+    <div>
+        <label for="name">Название пари:</label>
+        <output class="accessField"  type="text" id="name" name="name" ></output>
+    </div>
+
+    <div>
+        <bigText id="bigText">
+        <label for="description">Описание пари:</label>
+        <output  class="accessField"  id="description" name="description" ></output>
+        </bigText>
+    </div>
+
+    <div>
+        <bigText id="bigText">
+        <label for="typeDescription">Описание типа пари:</label>
+        <output class="accessField"  id="typeDescription" name="typeDescription" ></output>
+        </bigText>
+    </div>
+
+    <div>
+        <label for="status">Текущий татус пари:</label>
+        <output class="accessField"  id="status" name="status" ></output>
+    </div>
+
+    </div>
+
+    <div>
+        <bigText id="bigText">
+        <label for="prizeDescription">Описание условий выигрыша:</label>
+        <output class="accessField"  id="prizeDescription" name="prizeDescription" ></output>
+        </bigText>
+    </div>
+
+    <div>
+        <label for="wageringDataType">Формат ответа на пари:</label>
+        <output class="accessField" id="wageringDataType" name="wageringDataType"  ></output>
+    </div>
+
+    <div>
+        <label for="createTime">Время создания:</label>
+        <output class="accessFieldDeny"  type="text" id="createTime" name="createTime" ></output>
+    </div>
+
+    <!--<div>-->
+        <!--<label for="wageringResult">Wagering result:</label>-->
+        <!--<output class="accessField" type="text" id="wageringResult" name="wageringResult" disabled="disabled"></output>-->
+    <!--</div>-->
+
+    <div>
+        <label for="authorLogin">Логин создателя пари:</label>
+        <output class="accessFieldDeny"  type="text" id="authorLogin" name="authorLogin" ></output>
+    </div>
+
+    <br><br>
+
+    <table id = "tableForUsers">
+        <caption>Список пользователей сделавших ставки</caption>
+        <thead>
+        <tr>
+            <th>Полное имя</th>
+            <th>Электронная почта</th>
+            <th>Логин</th>
+            <th>Ставка</th>
+        </tr>
+        </thead>
+
+    </table>
+
+    <!--<div class="button">-->
+        <!--<button  type="submit">Update data</button>-->
+    <!--</div>-->
+</form>
+<div id="divEdit" class="button">
+    <button id = "buttonEdit" >Редактирование пари</button>
+</div>
+<div class="button" id="buttonBet">
+        <button id = "buttonRed" >Сделать ставку</button>
+    </div>
+<script src="../js/wageringFullInfo.js"></script>
+
+</body>
+</html>
